@@ -43,7 +43,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 80vh min-content min-content repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5em) {
     .container {
@@ -555,6 +555,104 @@ dt {
 .experiences {
   grid-column: full-start / full-end;
   background-color: #54483A; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  /* The actual timeline (the vertical ruler) */
+  /* Container around content */
+  /* Place the container to the left */
+  /* Place the container to the right */ }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: .6rem;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -.3rem; }
+    @media screen and (max-width: 600px) {
+      .timeline::after {
+        left: 3.1rem; } }
+  .timeline__content {
+    padding: 2rem 3rem;
+    background-color: white;
+    position: relative;
+    border-radius: .6rem; }
+  .timeline__container {
+    padding: 1rem 4rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    /* The circles on the timeline */ }
+    @media screen and (max-width: 600px) {
+      .timeline__container {
+        width: 100%;
+        padding-left: 7rem;
+        padding-right: 2.5rem; } }
+    .timeline__container::after {
+      content: '';
+      position: absolute;
+      width: 2.5rem;
+      height: 2.5rem;
+      right: -1.3rem;
+      background-color: white;
+      border: .4rem solid #FF9F55;
+      top: 1.5rem;
+      border-radius: 50%;
+      z-index: 1; }
+  .timeline__left {
+    left: 0;
+    /* Add arrows to the left container (pointing right) */ }
+    .timeline__left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 2.2rem;
+      width: 0;
+      z-index: 1;
+      right: 3rem;
+      border: medium solid white;
+      border-width: 1rem 0 1rem 1rem;
+      border-color: transparent transparent transparent white;
+      /* Make sure that all arrows are pointing leftwards */ }
+      @media screen and (max-width: 600px) {
+        .timeline__left::before {
+          left: 6rem;
+          border: medium solid white;
+          border-width: 1rem 1rem 1rem 0;
+          border-color: transparent white transparent transparent; } }
+    @media screen and (max-width: 600px) {
+      .timeline__left::after {
+        left: 1.8rem; } }
+  .timeline__right {
+    left: 50%;
+    /* Add arrows to the right container (pointing left) */
+    /* Fix the circle for containers on the right side */ }
+    @media screen and (max-width: 600px) {
+      .timeline__right {
+        left: 0%; } }
+    .timeline__right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 2.2rem;
+      width: 0;
+      z-index: 1;
+      left: 3rem;
+      border: medium solid white;
+      border-width: 1rem 1rem 1rem 0;
+      border-color: transparent white transparent transparent; }
+      @media screen and (max-width: 600px) {
+        .timeline__right::before {
+          left: 6rem; } }
+    .timeline__right::after {
+      left: -1.2rem; }
+      @media screen and (max-width: 600px) {
+        .timeline__right::after {
+          left: 1.8rem; } }
 
 .web_projects {
   width: 100%;
