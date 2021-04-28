@@ -670,6 +670,16 @@ dt {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
     row-gap: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .web_projects__container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4rem 10rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .web_projects__container {
+        margin: 3rem 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .web_projects__container {
+        margin: 3rem 1rem; } }
     .web_projects__container__item {
       width: 100%;
       overflow: hidden;
@@ -705,9 +715,11 @@ dt {
         transform: scale(1);
         filter: blur(3px) brightness(40%); }
 
-.gallery {
+.gallery_section {
   background-color: #f9f7f6;
-  grid-column: full-start / full-end;
+  grid-column: full-start / full-end; }
+
+.gallery {
   display: grid;
   /*grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 5vw);*/

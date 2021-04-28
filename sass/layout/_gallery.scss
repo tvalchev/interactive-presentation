@@ -1,6 +1,9 @@
-.gallery {
+.gallery_section{
     background-color: $color-grey-light-1;
     grid-column: full-start / full-end;
+}
+
+.gallery {
 
     display: grid;
     /*grid-template-columns: repeat(8, 1fr);
