@@ -38,6 +38,7 @@
 .paragraph {
     @extend %heading;
     font-size: 2rem;
+    font-weight: 300i;
     color: $color-grey-light-1;
     letter-spacing: 0.2rem;
 }

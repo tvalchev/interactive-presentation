@@ -2,3 +2,77 @@
     grid-column: full-start / full-end;
     background-color: $color-grey-light-1;
 }
+
+dl {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+    max-width:70rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+  
+  dt {
+    align-self: flex-start;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    justify-content: flex-end;
+    margin-left: 10rem;
+
+    @include respond(tab-land) {
+        margin-left: 6rem;
+    }
+  }
+  
+  .percentage {
+    line-height: 1;
+    text-transform: uppercase;
+    height: 5rem;
+    margin-left: 15rem;
+    background: repeating-linear-gradient(
+    to right,
+    #ddd,
+    #ddd 1px,
+    #fff 1px,
+    #fff 5%
+  );
+    
+    &:after {
+      content: "";
+      display: block;
+      background-color: $color-primary;
+      width: 5rem;
+      margin-bottom: 1rem;
+      height: 90%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background-color .3s ease;
+      cursor: pointer;
+    }
+    &:hover,
+    &:focus {
+      &:after {
+         background-color: #aaa; 
+      }
+    }
+  }
+  
+  @for $i from 1 through 100 {
+    .percentage-#{$i} {
+      &:after {
+        $value: ($i * 1%);
+        width: $value;
+      }
+    }
+  }
