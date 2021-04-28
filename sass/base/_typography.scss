@@ -42,3 +42,11 @@
     color: $color-grey-light-1;
     letter-spacing: 0.2rem;
 }
+
+.description {
+    @extend %heading;
+    font-size: 2rem;
+    font-weight: 300i;
+    color: $color-grey-dark-2;
+    margin: 1rem 0;
+}
