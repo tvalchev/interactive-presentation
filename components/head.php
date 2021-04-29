@@ -14,12 +14,12 @@
     <meta property="og:description" content="As a software developer I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set!" />
     <meta name="google" content="notranslate">
     <meta property="og:locale" content="bg_BG" />
-    <link rel="canonical" href=""/>
+    <link rel="canonical" href="https://todor-valchev.herokuapp.com/"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
 
     <!-- Jquery  -->
 	  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

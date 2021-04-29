@@ -10,14 +10,11 @@
             <a title="ClioTravel LTD website"
                 alt="ClioTravel LTD website" 
                 href="https://clio-travel.com/" target="_blank" rel="noreferrer">
-                <picture>
-                    <source srcset="resources/img/todor_valchev_cliotravel.webp" type="image/webp">
-                    <source srcset="resources/img/todor_valchev_cliotravel.jpg" type="image/jpeg"> 
-                    <img title="Todor Valchev - ClioTravel WebSite" 
-                        src="resources/img/todor_valchev_cliotravel.jpg" 
-                        alt="Todor Valchev - ClioTravel WebSite" 
-                        class="web_projects__container__item__img" >
-                </picture>
+                <img title="Todor Valchev - ClioTravel WebSite"
+                    data-src="resources/img/todor_valchev_cliotravel.jpg"
+                    data-webp="resources/img/todor_valchev_cliotravel.webp"
+                    alt="Todor Valchev - ClioTravel WebSite"
+                    class="web_projects__container__item__img lazy-img" >
                 <figcaption class="web_projects__container__item__caption"> 
                     <h3>ClioTravel</h3>
                     <br>
@@ -30,14 +27,11 @@
             <a title="Predistic LTD IOT website"
                 alt="Predistic LTD IOT website" 
                 href="https://iot.predistic.com/" target="_blank" rel="noreferrer">
-                <picture>
-                    <source srcset="resources/img/todor_valchev_predistic.webp" type="image/webp">
-                    <source srcset="resources/img/todor_valchev_predistic.jpg" type="image/jpeg"> 
-                    <img title="Todor Valchev develop Predistic WebSite" 
-                        src="resources/img/todor_valchev_predistic.jpg" 
-                        alt="Todor Valchev develop Predistic WebSite " 
-                        class="web_projects__container__item__img" >
-                </picture>
+                <img title="Todor Valchev develop Predistic WebSite"
+                    data-src="resources/img/todor_valchev_predistic.jpg"
+                    data-webp="resources/img/todor_valchev_predistic.webp"
+                    alt="Todor Valchev develop Predistic WebSite " 
+                    class="web_projects__container__item__img lazy-img" >
                 <figcaption class="web_projects__container__item__caption">
                     <h3>Iot Predistic</h3>
                     <br>
