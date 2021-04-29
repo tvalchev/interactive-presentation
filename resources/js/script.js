@@ -80,7 +80,7 @@ const worksEn = [
 ]
 
 
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
     const handleMap = (mapObject) => {
         return mapObject.map((elem, index) => {
@@ -101,11 +101,9 @@ $(document).ready(function() {
         });
     }
 
-    $('#education_en').html(handleMap(educationsEn).join(''));
-    $('#work_en').html(handleMap(worksEn).join(''))
-});
+    document.querySelector('#education_en').insertAdjacentHTML('beforeend', handleMap(educationsEn).join(''));
+    document.querySelector('#work_en').insertAdjacentHTML('beforeend', handleMap(worksEn).join(''));
 
-document.addEventListener("DOMContentLoaded", function() {
     let lazyloadImages;
   
     const contWebpImages = function ()  {
@@ -170,4 +168,4 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener("resize", lazyload);
       window.addEventListener("orientationChange", lazyload);
     }
-  },{passive: true})  
+  },{passive: true})
