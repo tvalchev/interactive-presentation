@@ -16,6 +16,11 @@
     <meta property="og:locale" content="bg_BG" />
     <link rel="canonical" href=""/>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <!-- Jquery  -->
 	  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="resources/js/modernizr-custom.js"></script>
