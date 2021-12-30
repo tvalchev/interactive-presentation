@@ -22,6 +22,14 @@ const educationsEn = [
 
 const worksEn = [
     {
+        id: 8,
+        company: "Predistic Ltd",
+        period: "January 2021 – present",
+        name: "Web Developer",
+        description: "Responsible for the coding, design and layout of a website according to a company specifications. Software technologies and tools used: HTML5, CSS, JavaScript, ReactJS, Visual Studio Code",
+        location: "Sofia, Bulgaria"
+    },
+    {
         id: 7,
         company: "Predistic Ltd",
         period: "July 2020 – present",
